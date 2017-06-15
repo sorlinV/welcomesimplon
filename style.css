@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
 * {
     margin: 0;
     /*border: 1px solid black;*/
 }
 
-@import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 /*======== NAV ==========
 =========================
@@ -55,7 +55,7 @@ a {
 }
 
 body {
-    background: lightslategray;
+    background: #778899;
 }
 
 main {
@@ -76,15 +76,17 @@ article {
     border-top: 4px solid #0c0078;
     width: 20%;
     max-width: 200px;
-    margin: 2%;
+    margin: 4%;
+    font-family: 'Myriad Pro', sans-serif;
 }
 
 article:hover {
-    box-shadow: 10px 10px 5px #444444;
+    box-shadow: 5px 5px 5px #666666;
 }
 
-article h2 {
+article h3 {
     height: 1.2em;
+    margin: 10% 0;
 }
 
 article img {
@@ -99,6 +101,4 @@ article img {
     width: 20%;
     align-self: flex-end;
     margin-top: -20%;
-    border: 1px solid black;
-    border-radius: 20%;
 }

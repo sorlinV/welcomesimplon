@@ -46,11 +46,11 @@
                 if (file_exists("img/".substr($projet, 3).".png")) {
                     $proj->img = "img/".substr($projet, 3).".png";
                 } else {
-                    $proj->img = "img/default.png";
+                    $proj->img = "img/proj.png";
                 }?>
                 <article>
                     <a href="<?php verif_web($proj->name); ?>">
-                        <h2><?php echo substr($proj->name, 3); ?></h2>
+                        <h3><?php echo substr($proj->name, 3); ?></h3>
                     </a>
                     <a href="<?php echo verif_web($proj->name); ?>" class="img_proj">
                         <img src="<?php echo $proj->img; ?>" alt="visuel du projet:">
