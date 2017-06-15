@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+/*======== NAV ==========
+=========================
+========= LOGO ==========
+=========================
+=======================*/
+
+#logo {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: 60%;
+}
+
+@keyframes logo_anim {
+    from {
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    to {
+        -ms-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+}
+
+#logo:hover {
+    animation-name: logo_anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-family: 'Pangolin', cursive;
+    align-items: center;
+    height: 6em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background: lightslategray;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 4px solid #0c0078;
+    width: 20%;
+    max-width: 200px;
+    margin: 2%;
+}
+
+article:hover {
+    box-shadow: 10px 10px 5px #444444;
+}
+
+article h2 {
+    height: 1.2em;
+}
+
+article img {
+    width: 100%;
+}
+
+.img_proj {
+    width: 100%;
+}
+
+.img_github {
+    width: 20%;
+    align-self: flex-end;
+    margin-top: -20%;
+    border: 1px solid black;
+    border-radius: 20%;
+}
