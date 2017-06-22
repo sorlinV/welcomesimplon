@@ -41,8 +41,7 @@
                 && file_exists($projet . "/.git/config")) {
                 $proj = new projet;
                 $proj->name = $projet;
-                $config = explode ("\n", file_get_contents($projet . "/.git/config"));
-                $proj->git = substr($config[6], 6);
+                $proj->git = "http://github.com/sorlinV/" . substr($projet, 3);
                 if (file_exists("img/".substr($projet, 3).".png")) {
                     $proj->img = "img/".substr($projet, 3).".png";
                 } else {
