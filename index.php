@@ -11,7 +11,7 @@
 <body>
     <header>
         <main>
-            <img src="img/default.png" id="logo" alt="logo">
+            <a href="index.php" id="logo"><img src="img/default.png" alt="logo"></a>
             <section>
                 <h1>Portfolio de SORLIN Valentin</h1>
                 <p>Je suis Développeur web spécialisé en php et je suis situé a Lyon et Saint-Etienne</p>
@@ -70,8 +70,5 @@
         }
     ?>
     </main>
-    <footer>
-        <a href="simplonlyon.fr">simplonlyon.fr</a>
-    </footer>
 </body>
 </html>
