@@ -10,9 +10,16 @@
 </head>
 <body>
     <header>
-        <img src="img/default.png" id="logo" alt="logo">
-        <h1>Portfolio de SORLIN Valentin</h1>
+        <main>
+            <img src="img/default.png" id="logo" alt="logo">
+            <section>
+                <h1>Portfolio de SORLIN Valentin</h1>
+                <p>Je suis Développeur web spécialisé en php et je suis situé a Lyon et Saint-Etienne</p>
+            </section>        
+        </main>
+        <p>Vous voulez en savoir plus:</p>
     </header>
+    <a href="contact.php" id="contact"><p>Contactez moi</p></a>
     <main>
     <?php
         $projets = scandir("..");
