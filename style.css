@@ -84,6 +84,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     max-width: 1000px;
     background: white;
     margin: 0 auto;
