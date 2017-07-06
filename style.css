@@ -83,6 +83,17 @@ body {
     background: #778899;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+
 body>main {
     display: flex;
     flex-direction: row;
@@ -93,19 +104,6 @@ body>main {
     background: white;
     margin: 0 auto;
     padding-top: 3em;
-    min-height: calc(100vh - 15em);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 1000px;
-    background: white;
-    margin: 0 auto;
-    min-height: calc(100vh - 15em);
 }
 
 input {
