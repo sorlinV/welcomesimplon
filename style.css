@@ -43,10 +43,16 @@
     animation-timing-function: linear;
 }
 
+.black {
+    background-color: black;
+}
+
 header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     background-color: black;

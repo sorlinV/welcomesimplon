@@ -9,16 +9,18 @@
     <title>Sorlin Valentin</title>
 </head>
 <body>
-    <header>
-        <main>
-            <a href="index.php" id="logo"><img src="img/default.png" alt="logo"></a>
-            <section>
-                <h1>Portfolio de SORLIN Valentin</h1>
-                <p>Je suis Développeur web spécialisé en php et je suis situé a Lyon et Saint-Etienne</p>
-            </section>        
-        </main>
-        <p>Vous voulez en savoir plus:</p>
-    </header>
+    <div class="black">
+        <header>
+            <main>
+                <a href="index.php" id="logo"><img src="img/default.png" alt="logo"></a>
+                <section>
+                    <h1>Portfolio de SORLIN Valentin</h1>
+                    <p>Je suis Développeur web spécialisé en php et je suis situé a Lyon et Saint-Etienne</p>
+                </section>        
+            </main>
+            <p>Vous voulez en savoir plus:</p>
+        </header>
+    </div>
     <a href="contact.php" id="contact"><p>Contactez moi</p></a>
     <main>
     <?php
