@@ -46,7 +46,7 @@
         }
         foreach ($projets as $projet) {
             $projet = "../".$projet;
-            if (is_dir($projet)) {
+            if (is_dir($projet) && $projet[0] != '.') {
                 $proj = new projet;
                 $proj->name = $projet;
                 $proj->git = "http://github.com/sorlinV/" . substr($projet, 3);
