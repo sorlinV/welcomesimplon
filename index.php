@@ -46,8 +46,7 @@
         }
         foreach ($projets as $projet) {
             $projet = "../".$projet;
-            if (is_dir($projet) && is_dir($projet . "/.git")
-                && file_exists($projet . "/.git/config")) {
+            if (is_dir($projet)) {
                 $proj = new projet;
                 $proj->name = $projet;
                 $proj->git = "http://github.com/sorlinV/" . substr($projet, 3);
