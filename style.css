@@ -11,6 +11,11 @@
 =========================
 =======================*/
 
+h2>a {
+    text-decoration: underline;
+    color: blue;
+}
+
 #logo {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);

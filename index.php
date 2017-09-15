@@ -25,24 +25,30 @@
     <main>
     <?php
         $projets = scandir("..");
-        if (isset($_GET['proj']) && $_GET['proj'] == "false") {
-            echo "<h2>Le projet selectioné n'a pas de page d'accueil ou \n".
-            "n'est pas un projet web merci de vous reférer au github du projet.</h2>";
+        if (isset($_GET['proj'])) {
+            ?>
+            <div>
+                <h2>Le projet selectioné n&acute;a pas de page d&acute;accueil ou
+                n&acute;est pas un projet web merci de vous reférer au Github du projet.
+                <a href="http://github.com/sorlinV/<?php echo $_GET['proj']?>">ICI</a>                
+                </h2>
+            </div>
+            <?php
         }
         class projet {
             public $name;
             public $git;
             public $img;
         }
-        function verif_web($path) {
-            if (file_exists($path."/index.php")) {
-                return $path;
-            } elseif (file_exists($path."/index.html")) {
-                return $path;
+        function verif_web($proj) {
+            if (file_exists($proj->name."/index.php")) {
+                return $proj->name;
+            } elseif (file_exists($proj->name."/index.html")) {
+                return $proj->name;
             } else {
-                return "?proj=false";
+                return "?proj=".substr($proj->name, 3);
             }
-            return ($path);
+            return ("?proj=".substr($proj->name, 3));
         }
         foreach ($projets as $proj) {
             $projet = "../".$proj;
@@ -54,13 +60,14 @@
                     $proj->img = "img/".substr($projet, 3).".png";
                 } else {
                     $proj->img = "img/proj.png";
-                }?>
+                }
+                ?>
                 <article>
-                    <a href="<?php verif_web($proj->name); ?>">
+                    <a href="<?php verif_web($proj); ?>">
                         <h3><?php echo substr($proj->name, 3); ?></h3>
                     </a>
-                    <a href="<?php echo verif_web($proj->name); ?>" class="img_proj">
-                        <img src="<?php echo $proj->img; ?>" alt="visuel du projet:">
+                    <a href="<?php echo verif_web($proj); ?>" class="img_proj">
+                        <img src="<?php echo $proj->img; ?>" alt="visuel du projet:<?php echo $proj->name; ?>">
                     </a>
                     <a href="<?php echo $proj->git; ?>"  class="img_github" >
                         <img src="img/github.png" alt="logo github">
