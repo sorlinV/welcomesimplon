@@ -67,7 +67,7 @@
                         <h3><?php echo substr($proj->name, 3); ?></h3>
                     </a>
                     <a href="<?php echo verif_web($proj); ?>" class="img_proj">
-                        <img src="<?php echo $proj->img; ?>" alt="visuel du projet:<?php echo $proj->name; ?>">
+                        <img src="<?php echo $proj->img; ?>" alt="visuel du projet:<?php echo substr($proj->name, 3); ?>">
                     </a>
                     <a href="<?php echo $proj->git; ?>"  class="img_github" >
                         <img src="img/github.png" alt="logo github">
