@@ -28,6 +28,21 @@ h2>a {
     height: 100%;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>* {
+    width: 80%;
+    margin: 0.1em;
+}
+
+form>input {
+    height: 2em;
+}
+
 @keyframes logo_anim {
     from {
         -ms-transform: rotate(-45deg);
